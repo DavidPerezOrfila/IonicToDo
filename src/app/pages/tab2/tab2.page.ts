@@ -1,3 +1,4 @@
+import { DeseosService } from './../../services/deseos.service';
 import { Component } from '@angular/core';
 
 @Component({
@@ -5,4 +6,6 @@ import { Component } from '@angular/core';
   templateUrl: 'tab2.page.html',
   styleUrls: ['tab2.page.scss']
 })
-export class Tab2Page {}
+export class Tab2Page {
+    constructor (public deseosService: DeseosService) {}
+}
